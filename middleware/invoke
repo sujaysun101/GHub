@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#
+# jupyter tool
+#
+/usr/bin/invoke_app "$@" -t termpicks \
+                         -C "start_jupyter -T @tool -t termpicks.ipynb" \
+                         -u anaconda-X \
+                         -r none \
+                         -w headless
